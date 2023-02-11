@@ -1,0 +1,24 @@
+# utility from 
+# https://github.com/devilismyfriend/StableTuner
+# https://github.com/salesforce/BLIP
+
+# win
+pip install -r requirements.txt
+
+
+# linux
+# linux gpu pytorch 1.13.1 + cuda11.7
+pip3 install torch torchvision torchaudio
+
+# https://pytorch.org/
+
+# to install over linux requeriments.txt disable these lines first:
+	# deepspeed==0.8.0
+	# torch==1.13.1+cu117
+	# torchvision==0.14.1+cu117
+
+
+
+# launch with
+
+python captionBuddy.py
