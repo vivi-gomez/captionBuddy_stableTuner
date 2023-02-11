@@ -1,0 +1,41 @@
+{% set conda_py = os.environ.get('CONDA_PY') %}
+name: captionBuddy
+
+includes:
+
+
+dependencies:
+  - accelerate
+  - bitsandbytes
+  - cog
+  - converters
+  - customtkinter
+  - decord
+  - deepspeed
+  - diffusers
+  - einops
+  - fairscale
+  - pycocoevalcap
+  - charset_normalizer
+  - GitPython
+  - gradio
+  - huggingface_hub
+  - keyboard
+  - numpy
+  - Pillow
+  - pycocoevalcap
+  - pycocotools
+  - pyperclip
+  - requests
+  - ruamel_yaml
+  - safetensors
+  - timm
+  - torch
+  - torchvision
+  - tqdm
+  - transformers
+
+environment:
+  PYTHONPATH:
+    -  {{ root }}/src
+  STAGE: DEVELOPMENT
